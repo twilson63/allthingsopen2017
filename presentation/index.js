@@ -89,7 +89,14 @@ Jan - May - Sept
 
 ---
 
-> Shared Mutable state is the root of all evil...
+> Shared Mutable state is the root of all evil... Pete Hunt Facebook
+
+---
+
+### Why is shared mutable state bad?
+
+* It is easy to create bugs
+* It is hard to maintain
 
 ---
 
@@ -112,7 +119,7 @@ Jan - May - Sept
 
 ---
 
-### On Tap
+### Talking About
 
 * Tachyons
 * Ramda
@@ -184,7 +191,7 @@ a very testable way.
         <Slide transition={[ 'fade' ]} bgColor='primary'>
           <Link
             target='_new'
-            href='http://codepen.io/twilson63/pres/vmJwxZ?editors=0010'
+            href='https://runkit.com/twilson63/590c7d1967f45a00121c2b6a'
           >
             <Text>Demo</Text>
           </Link>
