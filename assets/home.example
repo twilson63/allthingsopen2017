@@ -1,0 +1,9 @@
+export default () => (
+  <Layout>
+    <Header />
+    <PlayersHand />
+    <DealersHand />
+    <ScoreboardContainer />
+    <ControlsContainer />
+  </Layout>
+)

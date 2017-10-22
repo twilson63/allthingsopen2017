@@ -1,0 +1,10 @@
+# Create a new project folder
+npm install yarn -g
+yarn init -y
+yarn add next react react-dom
+npx json -I -f package.json /
+  -e 'this.scripts = {"dev": "next", /
+  "build":"next build", "start": "next start"}'
+mkdir pages
+echo 'export default () => <h1>Hello World</h1>' /
+  > pages/index.js

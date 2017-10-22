@@ -1,0 +1,11 @@
+const Player = ({ player, game }) => {
+  const showCard = card => <Card {...card} />
+  return (
+    <div>
+      {map(showCard, player)}
+      {not(equals('OFF', game.status)) &&
+        <Placeholder score={game.player} />
+      }
+    </div>
+  )
+}

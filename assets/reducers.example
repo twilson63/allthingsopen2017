@@ -1,0 +1,14 @@
+const rootReducer =
+  combineReducers({ game, player, dealer})
+
+const grab = (name, action) =>
+  compose(prop(name), pick([name]), prop('payload'))(action)
+
+const initialState = { wins: 0, status: 'OFF' }
+function game(state = initialState, action) {
+  return cond([
+    [equals('SET_GAME'), always(action.payload)],
+    [equals('NEWGAME'), () => grab('game', action)],
+    [T, always(state)]
+  ])(action.type)
+}

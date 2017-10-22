@@ -1,0 +1,10 @@
+const Title = ({children}) => (
+  <div>
+    {children}
+  </div>
+)
+
+ReactDOM.render(
+  <Title>Beep Boop</Title>, 
+  document.createElement('app'))
+

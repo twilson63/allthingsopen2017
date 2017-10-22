@@ -1,0 +1,17 @@
+export const newgame = async (dispatch, getState) => {
+  // need to clone to force immutability
+  const state = clone(store.getState())
+  // clear hands
+  state.player = []
+  state.dealer = []
+  // create new deck
+  state.game.deck = state.game.deck
+    ? state.game.deck
+    : await createDeck()
+  // ... deal cards
+  state.game.status = 'ON'
+  state.game.player = getScore(state.player)
+  state.game.dealer = getScore(state.dealer)
+
+  dispatch({ type: 'NEWGAME', payload: state })
+}

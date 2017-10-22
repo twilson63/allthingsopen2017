@@ -1,0 +1,12 @@
+// action creator to draw cards
+const drawCards = count => (dispatch) => {
+  fetch(deckofcards(count))
+    .then(res => res.json())
+    .then(result => 
+      dispatch({
+        type: SET_CARDS, 
+        payload: result.cards 
+      })
+    )
+  
+}

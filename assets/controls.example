@@ -1,0 +1,11 @@
+const connector = connect(identity, mapActionsToProps)
+
+export default connector(Controls)
+
+function mapActionsToProps(dispatch) {
+  return {
+    hit: e => dispatch(hit),
+    stay: e => dispatch(stay),
+    reset: e => dispatch(reset)
+  }
+}

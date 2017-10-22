@@ -1,0 +1,6 @@
+<Page>
+  <header>Widgets</header>
+  <main>
+    <List>{map(li, widgets)}</List>
+  </main>
+</Page>
