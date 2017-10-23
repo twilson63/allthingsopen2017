@@ -321,16 +321,76 @@ export default class Presentation extends React.Component {
           <Heading>Resources</Heading>
           <List>
             <ListItem>
-              <a href="https://21.now.sh">Game</a>
+              <a href="https://21.now.sh">Twenty-One Game</a>
             </ListItem>
             <ListItem>
               <a href="https://github.com/jrs-innovation-center/twenty-one">
-                Source Code
+                Twenty-One Source Code
               </a>
+            </ListItem>
+            <ListItem>
+              <a href="https://reactjs.org/">React Documentation</a>
+            </ListItem>
+            <ListItem>
+              <a href="https://ramdajs.com">Ramda Documentation</a>
+            </ListItem>
+            <ListItem>
+              <a href="https://tachyons.io">Tachyons Documentation</a>
+            </ListItem>
+            <ListItem>
+              <a href="https://zeit.co/now">NowJS Documentation</a>
             </ListItem>
           </List>
         </Slide>
-        <Slide />
+        <Slide>
+          <Heading size={3}>Credits</Heading>
+          <List>
+            <ListItem>
+              React Logo - https://arcweb.co/wp-content/uploads
+              /2016/10/react-logo-1000-transparent.png
+            </ListItem>
+            <ListItem>
+              Redux Logo - https://raw.githubusercontent.com/reactjs
+              /redux/master/logo/logo.png
+            </ListItem>
+            <ListItem>
+              Ramda Logo - http://ramda.jcphillipps.com/logo
+              /ramdaFilled_200x235.png
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading size={3}>Credits (cont)</Heading>
+          <List>
+            <ListItem>
+              Tachyons Logo -
+              https://opencollective-production.s3-us-west-1.amazonaws.com
+              /5e1b02e0-bce5-11e6-9ca1-bb6c7a9a84e0.png
+            </ListItem>
+            <ListItem>
+              Zeit Now Logo -
+              https://pbs.twimg.com/profile_images/784360755319697408
+              /cw6zhtGK.jpg
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading size={3}>Credits (cont)</Heading>
+          <List>
+            <ListItem>
+              React Virtual DOM Drawing -
+              https://media.licdn.com/mpr/mpr/shrinknp_800_800
+              /AAEAAQAAAAAAAAc3AAAAJGEzNjRmMWZmLWI3YTgtNGNmYy1hOTU0LTQ0ZDU4ZjgwMDJiZQ.jpg
+            </ListItem>
+            <ListItem>
+              Zeit NowJS GIF - https://hptechblogs.com/content/images
+              /2017/08/2674118914543364345a1efea35608aa.gif
+            </ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading>The End</Heading>
+        </Slide>
       </Deck>
     )
   }
